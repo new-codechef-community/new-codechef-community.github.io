@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin:0 auto;
     padding: 0;
     list-style-type: none;
 } 
@@ -8,6 +8,8 @@
     --color-grey: rgb(51, 47, 47);
     --color-light-cream: rgb(241, 237, 229);
 }
+
+
 main{
     width: 100%;
 }
@@ -63,6 +65,7 @@ header{
 }
 
 .menu{
+    color: black;
     margin: 1rem;
     background-color: var(--color-grey);
     display: grid;
@@ -75,12 +78,12 @@ header{
 }
 
 .button-style{
-    background-color: white;
     color: black;
-    border: var(--color-grey) solid .1rem;
-    padding: .8rem 1.5rem;
     text-decoration: none;
     display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
 }
 
 .search-bar{
@@ -89,17 +92,48 @@ header{
     padding: 1rem;
 }
 .search-style{
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 }
 .category{
+    background-color: var(--color-light-cream);
     grid-area: ctgy;
-    width: 100%;
+    justify-self: stretch;
+    max-width: 100%;
+    /* width:100%; */
+    margin: 0 1em;
+    padding: 0 1em;
 }
 .topic-tags{
     grid-area: tags;
-    width: 100%;
-    justify-self: center;    
+    background-color: var(--color-light-cream);
+    justify-self: stretch; 
+    max-width: 100%;
+    /* width:100%; */
+    margin: 0 1em;
+    padding: 0 1rem;
+}
+
+.topics-selection{
+    grid-area: tpcs;
+    justify-self:stretch;
+    max-width: 100%;
+    margin: 1rem;
+}
+
+.topics-selection li{
+    background-color: var(--color-light-cream);
+    font-size: 1.5em;
+    margin: .5em 0;
+    padding: 0 1rem;
+}
+.topics-selection span{
+    padding-left: 1rem;
+}
+
+.topic-list{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .post-area{
     display: grid;
