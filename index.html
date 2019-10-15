@@ -13,7 +13,7 @@
     </head>
     <body>
         <header> 
-            <ul class="page-icons">
+            <ul class="header-icons">
                 <li><img src="./img/png/mobilebars.png" alt="custom options"></li>
                 <li class="align-center"><img src="./img/png/codechef-icon.png" alt="logo"></li>
                 <li class="align-right"><img src="./img/png/userIcon.png" alt="sign in"></li>
@@ -21,19 +21,19 @@
 
             <nav> 
                 <ul class="topic-selection">
-                    <li><a href="#">Trending</a></li>
+                    <li class="is-active"><a href="#">Trending</a></li>
                     <li><a href="#">Editor's Choice</a></li>
                     <li><a href="#">New</a></li>
                 </ul>
-                <ul class="topic-selection">
-                    <li class="selected trending"></li>
-                    <li class="selected editor"></li>
-                    <li class="selected new"></li>
-                </ul> 
             </nav>
         </header>
 
         <main>
+            <div class="menu">
+                <div class="search-bar"><input class="search-style" type="search" placeholder="Search Topics"></div>
+                <div class="category"><a class="button-style" href="#" alt="Categories">categories</a></div>
+                <div class="topic-tags"><a class="button-style" href="#" alt="Categories">categories</a></div>
+            </div>
             <ol class="post-area">
                 <article class="post">
                     <div>
@@ -51,10 +51,10 @@
                             
                             <ul class="post-icons">
                                 <li></li>
-                                <li class="align-center"><img src="./img/svg/binoculars-solid.svg" alt="Views Icon"><span>50</span></li>
-                                <li class="align-center"><img src="./img/svg/heart-regular.svg" alt="Likes Icon"><span>50</span></li>
-                                <li class="align-center"><img src="./img/svg/comment-solid.svg" alt="Comments Icon"><span>50</span></li>
-                                <li class="align-right"><img src="./img/svg/share-alt-solid.svg" alt="Share Icon"></li>
+                                <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
+                                <li class="align-center"><i class="far fa-heart"></i><span>50</span></li>
+                                <li class="align-center"><i class="fas fa-comment"></i><span>50</span></li>
+                                <li class="align-right"><i class="fas fa-share-alt"></i></li>
                             </ul>
                         </ul>
                     </div>
@@ -76,10 +76,10 @@
                             
                             <ul class="post-icons">
                                 <li></li>
-                                <li class="align-center"><img src="./img/svg/binoculars-solid.svg" alt="Views Icon"><span>50</span></li>
-                                <li class="align-center"><img src="./img/svg/heart-regular.svg" alt="Likes Icon"><span>50</span></li>
-                                <li class="align-center"><img src="./img/svg/comment-solid.svg" alt="Comments Icon"><span>50</span></li>
-                                <li class="align-right"><img src="./img/svg/share-alt-solid.svg" alt="Share Icon"></li>
+                                <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
+                                <li class="align-center"><i class="far fa-heart"></i><span>50</span></li>
+                                <li class="align-center"><i class="fas fa-comment"></i><span>50</span></li>
+                                <li class="align-right"><i class="fas fa-share-alt"></i></li>
                             </ul>
                         </ul>
                     </div>
@@ -101,29 +101,32 @@
                             
                             <ul class="post-icons">
                                 <li></li>
-                                <li class="align-center"><img src="./img/svg/binoculars-solid.svg" alt="Views Icon"><span>50</span></li>
-                                <li class="align-center"><img src="./img/svg/heart-regular.svg" alt="Likes Icon"><span>50</span></li>
-                                <li class="align-center"><img src="./img/svg/comment-solid.svg" alt="Comments Icon"><span>50</span></li>
-                                <li class="align-right"><img src="./img/svg/share-alt-solid.svg" alt="Share Icon"></li>
-                           </ul>
+                                <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
+                                <li class="align-center"><i class="far fa-heart"></i><span>50</span></li>
+                                <li class="align-center"><i class="fas fa-comment"></i><span>50</span></li>
+                                <li class="align-right"><i class="fas fa-share-alt"></i></li>
+                            </ul>
                         </ul>
                     </div>
                 </article>
             </ol>
         </main>
 
-        <footer>
+        <footer class="footer">
             <div>
                 <ul class="footer-icons">                    
-                    <li><a href="#"><img src="./img/svg/facebook-f-brands.svg"></a></li>
-                    <li><a href="#"><img src="./img/svg/twitter-brands.svg"></a></li>
-                    <li><a href="#"><img src="./img/svg/instagram-brands.svg"></a></li>
-                    <li><a href="#"><img src="./img/svg/linkedin-in-brands.svg"></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
             <div>
-                <img src="./img/jpg/logo.jpg">
-                <p>All rights reserved</p>
+                <img class="footer-logo" src="./img/png/logo2.png" alt="footer-logo">
+            </div>
+            <div>
+                <li><p>All rights reserved</p></li>
+                <li><p>A22, calderstone blvd, Toronto, Canada</p></li>
             </div>
             
         </footer>
