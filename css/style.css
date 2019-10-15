@@ -37,9 +37,12 @@ ul li{
     grid-template-columns: 1fr;
     padding: 1rem 2rem;
     grid-gap: 1em;
-    border-block-style: solid;
-    border-block-width: 2em;
+}
 
+.post{
+    border-style: solid;
+    border-color: var(--color-grey);
+    border-width: .2em;
 }
 
 .post img{
