@@ -154,9 +154,14 @@ header{
     border-color: var(--color-grey);
     border-width: .2em;
     background-color: var(--color-light-cream);
+    display: grid;
+    grid-template-columns: 1fr;
 }
-
-.post img{
+.post-main{
+    max-height: 80vh;
+    overflow: scroll;
+}
+.post-area img{
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -164,6 +169,7 @@ header{
 .post-text-area{
     margin: .1em 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .post-text-area li{
     display: inline-block;
