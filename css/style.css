@@ -9,10 +9,6 @@
     --color-light-cream: rgb(241, 237, 229);
 }
 
-
-main{
-    width: 100%;
-}
 header{
     background-color: var(--color-grey);
     /* Orientation: First non-static parent */
@@ -21,11 +17,17 @@ header{
     left: 0;
     width: 100%;
 }
+.align-left{
+    text-align: left;
+    width: 100%;
+}
 .align-center{
     text-align: center;
+    width: 100%;
 }
 .align-right{
     text-align: right;
+    width: 100%;
 }
 .header-icons{
     display: grid;
@@ -43,12 +45,12 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0.5em 1rem;
     color:white;
-    text-align: center;
 }
 .topic-selection a{
     color:white;
     text-decoration: none;
 }
+
 .is-active{
     padding-bottom: .5em;
     border-bottom-color: white;
@@ -189,13 +191,15 @@ header{
 }
 .footer-icons{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
 }
 .footer-logo{
     max-width: 100%;
+    height: 10em;
 }
 .footer-icons a{
   color: white;
-  font-size: 3em;
+  font-size: 5em;
   text-align: left;
 }
