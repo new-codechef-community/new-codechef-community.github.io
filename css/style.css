@@ -92,7 +92,9 @@
     "srch srch srch"
     "ctgy . tags"
     "head head head"
-    "tpcs tpcs tpcs";
+    "tpcs tpcs tpcs"
+    "devs devs devs"
+    "name name name";
     grid-gap: .5rem;
 }
 
@@ -124,18 +126,14 @@
 .category{
     background-color: var(--color-light-cream);
     grid-area: ctgy;
-    /* justify-self: stretch; */
     max-width: 100%;
-    /* width:100%; */
     padding: 0 .5em;
     margin: 0 1rem;
 }
 .topic-tags{
     grid-area: tags;
     background-color: var(--color-light-cream);
-    /* justify-self: stretch;  */
     max-width: 100%;
-    /* width:100%; */
     padding: 0 .5em;
     margin: 0 1rem;
 }
@@ -146,7 +144,6 @@
 }
 .topics-selection{
     grid-area: tpcs;
-    /* justify-self:stretch; */
     max-width: 100%;
     margin: 0 1rem;
 }
@@ -165,6 +162,25 @@
     background-color: var(--color-light-cream);
     max-width: 100%;
     width: 100%;
+}
+.devs-head{
+    grid-area:devs;
+    color: white;
+    font-size: 1.5em;
+}
+.devs-selection{
+    grid-area: name;
+    color:white;
+    max-width: 100%;
+    margin: .5rem 1rem .5rem 0;
+}
+.devs-list{
+    max-width: 100%;
+    margin-left: 30vw;
+}
+
+.devs-list input{
+    margin: .3em 1em;
 }
 .post-area{
     display: grid;
@@ -263,6 +279,9 @@
     .topics-list{
         grid-template-columns: repeat(2, 1fr);
     }
+    .devs-list{
+        margin-left: 40vw;
+    }
 }
 
 @media(min-width:1200px){
@@ -292,6 +311,9 @@
     .big-sign-in-btn{
         background-color: black;
     }
+    .devs-list{
+        margin-left: 0;
+    }
     .post-area{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -318,7 +340,7 @@
     .menu{
         position:fixed;
         width: 16rem;
-        top: 12.6em;
+        top: 11.6em;
         overflow-y:scroll;
     }
     .footer-contact-parent{
@@ -334,7 +356,7 @@
         height:20vh;
     }
     .topic-selection{
-        font-size:1.6em;
+        font-size:1.2em;
     }
     
 
