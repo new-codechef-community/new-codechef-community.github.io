@@ -12,14 +12,23 @@
         <script src="https://kit.fontawesome.com/bf16eed826.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header> 
-            <ul class="header-icons">
-                <li class="align-left"><a href="#"><img src="./img/png/mobilebars.png" alt="custom options"></a></li>
-                <li class="align-center"><img src="./img/Logo.svg" alt="logo"></li>
-                <li class="align-right"><a href="#"><img src="./img/login.svg" alt="sign in"></a></li>
-            </ul>
-
-            <nav> 
+        <header class="header"> 
+            <div class="complete-logo"><img src="./img/complete-logo.svg"></div>
+            <div class="inline-force">
+                <ul class="header-icons">
+                    <li class="menu-btn align-left"><a href="#"><img class="header-vector-img" src="./img/png/mobilebars.png" alt="custom options"></a></li>
+                    <li class="menu-btn align-center"><img class="header-vector-img top-logo" src="./img/Logo.svg" alt="logo"></li>
+                    <li class="menu-btn align-right"><a href="#"><img class="header-vector-img" src="./img/login.svg" alt="sign in"></a></li>
+                    <li class="header-nav-btns"><a class="button-style " href="#" alt="Home">Home</a></li>
+                    <li class="header-nav-btns"><a class="button-style" href="#" alt="Practice">Practice</a></li>
+                    <li class="header-nav-btns"><a class="button-style" href="#" alt="Challenges">Challenges</a></li>
+                    <li class="header-nav-btns"><a class="button-style" href="#" alt="Companies">Companies</a></li>
+                    <li class="header-nav-btns"><a class="button-style" href="#" alt="about">About us</a></li>
+                    <li class="header-nav-btns big-sign-in-btn align-right"><a href="#"><img class="header-vector-img" src="./img/login.svg" alt="sign in"></a></li>
+                </ul>
+            </div>
+            <!-- <div class="inline-force"><a href="#"><img class="header-vector-img" src="./img/login.svg" alt="sign in"></a></div> -->
+            <nav>
                 <ul class="topic-selection">
                     <li class="align-center is-active"><a class="align-left" href="#">Trending</a></li>
                     <li class="align-center"><a href="#">Editor's Choice</a></li>
@@ -196,19 +205,22 @@
             <div>
                 <img class="footer-logo" src="./img/complete-logo.svg" alt="footer-logo">
             </div>
-            <div>
+            <div class="footer-contact-parent">
                 <div class="footer-contacts">
-                    <li><p>Contact Information</p></li>
-                    <li><p>Mobile: +129 324 234 244</p></li>
-                    <li><p>Office: +1 457 766 244</p></li>
+                    <ul>
+                        <li><p><strong></strong>Contact Information</strong></p></li>
+                        <li><p>Mobile: +1 324 234 244</p></li>
+                        <li><p>Office: +1 457 766 244</p></li>
+                    </ul>
                 </div>
                 <div class="footer-contacts">
-                    <li><p>All rights reserved</p></li>
-                    <li><p>A22, calderstone blvd, Toronto, Canada</p></li>
+                    <ul>
+                        <li><p><strong>Address</strong></p></li>
+                        <li><p>A22, calderstone blvd, Toronto, Canada</p></li>
+                        <li><p>All rights reserved</p></li>
+                    </ul> 
                 </div>
-               
             </div>
-            
         </footer>
     </body>
 </html>
