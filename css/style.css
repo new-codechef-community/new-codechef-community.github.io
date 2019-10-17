@@ -254,7 +254,7 @@ body{
 .align-right{
     text-align: right;
 }
-@media(min-width:768px){
+@media(min-width:48em){
     .post-area{
         grid-template-columns: 1fr 1fr;
     }
@@ -271,7 +271,7 @@ body{
     }
 }
 
-@media(min-width:1200px){
+@media(min-width:75em){
     .smallscreens-btn{
         display:none;
     }
