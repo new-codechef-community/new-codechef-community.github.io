@@ -7,6 +7,7 @@
 :root{
     --color-grey: rgb(51, 47, 47);
     --color-light-cream: rgb(241, 237, 229);
+    --color-dark-cream:  rgb(209, 172, 98);
 }
 
 header{
@@ -127,20 +128,25 @@ header{
     max-width: 100%;
     margin: 0 1rem;
 }
-
-.topics-selection li{
-    background-color: var(--color-light-cream);
-    font-size: 1.5em;
-    margin-bottom: .5em;
-    padding: 0 1rem;
-}
 .topics-selection span{
     padding-left: 1rem;
 }
 
-.topic-list{
+.topics-list{
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-bottom: 1rem;
+}
+.topics-list > div{
+    background-color: var(--color-light-cream);
+    max-width: 100%;
+    width: 100%;
+}
+.topics-list li{
+    display: block;
+    max-width: 100%;
+    width: 100%;
 }
 .post-area{
     display: grid;
@@ -158,12 +164,14 @@ header{
     grid-template-columns: 1fr;
 }
 .post-main{
-    max-height: 60vh;
-    overflow-y: scroll;
+    display:grid;
+    grid-template-columns: 1fr;
+    max-height: 70vh;
+    overflow-y: hidden ;
 }
 .post-area img{
     max-width: 100%;
-    /* height: 10%; */
+    height:30vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -173,7 +181,6 @@ header{
     
 }
 .post-text-area li{
-    display: inline-block;
     padding: .5em 0 0 0;
 }
 .post-text-area h2{
@@ -181,13 +188,10 @@ header{
 }
 .post-icons{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 1em 0;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1em ;
     font-size: 1.2em;
-}
-.post-icons img{
-    height: 1em;
-    width: 1em;
+    grid-gap: 1em;
 }
 .post-icons span{
     margin: 0 0 .5em .5em;
@@ -214,4 +218,41 @@ header{
   color: white;
   font-size: 3em;
   text-align: left;
+}
+.footer-contacts{
+    padding: 1em;
+}
+
+@media(min-width:768px){
+    .post-area{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-icons{
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 2em;
+        margin: 1em;
+    }
+    .topics-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:1200px){
+    .post-area{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-icons{
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 2em;
+        margin: 1em;
+    }
+    .topics-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
