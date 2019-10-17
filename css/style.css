@@ -1,5 +1,5 @@
 *{
-    margin:0 auto;
+    margin: 0 0;
     padding: 0;
     list-style-type: none;
 } 
@@ -9,7 +9,9 @@
     --color-light-cream: rgb(241, 237, 229);
     --color-dark-cream:  rgb(209, 172, 98);
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .header{
     background-color: black;
     /* Orientation: First non-static parent */
@@ -55,14 +57,14 @@
     width: 100%;
 }
 
-.topic-selection{
+.post-sorting-selection{
     background-color: var(--color-grey);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0.5em 1rem;
     color:white;
 }
-.topic-selection a{
+.post-sorting-selection a{
     color:white;
     text-decoration: none;
 }
@@ -82,7 +84,7 @@
     display: none
 }
 
-.menu{
+.filter-panel{
     color: black;
     margin: 1rem;
     background-color: var(--color-grey);
@@ -96,15 +98,12 @@
     "devs devs devs"
     "name name name";
     grid-gap: .5rem;
+    text-align:center;
 }
 
 .button-style{
     color: black;
     text-decoration: none;
-    display: inline-block;
-    max-width: 100%;
-    width: 100%;
-    /* text-align: left; */
 }
 .header-nav-btns{
     margin:1em;
@@ -133,7 +132,7 @@
 .topic-tags{
     grid-area: tags;
     background-color: var(--color-light-cream);
-    max-width: 100%;
+    /* max-width: 100%; */
     padding: 0 .5em;
     margin: 0 1rem;
 }
@@ -141,11 +140,13 @@
     grid-area: head;
     color: white;
     font-size: 2em;
+    text-align: center;
 }
 .topics-selection{
     grid-area: tpcs;
-    max-width: 100%;
+    color: white;
     margin: 0 1rem;
+    text-align:left;
 }
 .topics-selection span{
     padding-left: 1rem;
@@ -154,14 +155,7 @@
 .topics-list{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
-    margin-bottom: 1rem;
-    
-}
-.topics-list > div{
-    background-color: var(--color-light-cream);
-    max-width: 100%;
-    width: 100%;
+    grid-gap: .5em;    
 }
 .devs-head{
     grid-area:devs;
@@ -176,7 +170,7 @@
 }
 .devs-list{
     max-width: 100%;
-    margin-left: 25vw;
+    text-align: left;
 }
 
 .devs-list input{
@@ -201,22 +195,28 @@
     display:grid;
     grid-template-columns: 1fr;
     max-height: 70vh;
-    overflow-y: hidden ;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    
 }
-.post-area img{
+
+.post-text-area{
+    margin: 1rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+      
+}
+.post-image{
+    max-height: 30vh;
+    overflow: hidden;
+}
+.post img{
     max-width: 100%;
-    width:100%;
-    height:30vh;
     margin-left: auto;
     margin-right: auto;
 }
-.post-text-area{
-    margin: 1rem 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
 .post-text-area li{
     padding: .5em 0 0 0;
+    
 }
 .post-text-area h2{
     font-family: 'Times New Roman', Times, serif;
@@ -279,9 +279,6 @@
     .topics-list{
         grid-template-columns: repeat(2, 1fr);
     }
-    .devs-list{
-        margin-left: 40vw;
-    }
 }
 
 @media(min-width:1200px){
@@ -337,7 +334,7 @@
         max-width: 100%;
         height: 6em;
     }
-    .menu{
+    .filter-panel{
         position:fixed;
         width: 16rem;
         top: 11.6em;
@@ -352,10 +349,7 @@
     .post-main{
         max-height: 50vh;
     }
-    .post-area img{
-        height:20vh;
-    }
-    .topic-selection{
+    .post-sorting-selection{
         font-size:1.2em;
     }
     
