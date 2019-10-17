@@ -14,22 +14,9 @@ body{
 }
 .header{
     background-color: black;
-    /* Orientation: First non-static parent */
     position: sticky;
     top:0;
     left: 0;
-    width: 100%;
-}
-.menu-btn{
-    width: 2.5em;
-    height: 2.5em;
-}
-.align-left{
-    text-align: left;
-    width: 100%;
-}
-.align-center{
-    text-align: center;
     width: 100%;
 }
 .complete-logo{
@@ -39,24 +26,24 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: black;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
+    
 }
 .header-vector-img{
     display: inline-block;
     height: 1.5em;
     width: 1.5em;
 }
+.header-nav-btns{
+    margin: 3em 0;
+    text-align: left;
+    color:black;
+    display: none;
+}
 .top-logo{
     height: 3.3em;
     width: 3.3em;
-    margin-bottom: 1em;
 }
-
-.align-right{
-    text-align: right;
-    width: 100%;
-}
-
 .post-sorting-selection{
     background-color: var(--color-grey);
     display: grid;
@@ -86,7 +73,7 @@ body{
 
 .filter-panel{
     color: black;
-    margin: 1rem;
+    margin: 1em;
     background-color: var(--color-grey);
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -100,19 +87,22 @@ body{
     grid-gap: .5rem;
     text-align:center;
 }
+.fixed-left-panel{
+    display: none;
+    margin: 1em;
+    background-color: var(--color-grey);
+    position:fixed;
+    width: 16rem;
+    height: 100vh;
+    top: 12em;
+}
 
 .button-style{
+    background-color: var(--color-light-cream);
     color: black;
     text-decoration: none;
+    padding: 0 .5em;
 }
-.header-nav-btns{
-    margin:1em;
-    text-align: center;
-    color:black;
-    background-color: var(--color-light-cream);
-    display: none;
-}
-
 .search-bar{
     grid-area: srch;
     justify-self: stretch;
@@ -120,27 +110,24 @@ body{
 }
 .search-style{
     max-width: 100%;
+    width:100%;
     text-align: center;
 }
 .category{
-    background-color: var(--color-light-cream);
     grid-area: ctgy;
-    max-width: 100%;
-    padding: 0 .5em;
     margin: 0 1rem;
+    text-align: left;
 }
 .topic-tags{
     grid-area: tags;
-    background-color: var(--color-light-cream);
-    /* max-width: 100%; */
-    padding: 0 .5em;
+    text-align: right;
     margin: 0 1rem;
 }
 .topics-head{
     grid-area: head;
     color: white;
     font-size: 2em;
-    text-align: center;
+    margin: 0 1rem;
 }
 .topics-selection{
     grid-area: tpcs;
@@ -190,26 +177,22 @@ body{
     background-color: var(--color-light-cream);
     display: grid;
     grid-template-columns: 1fr;
-}
-.post-main{
-    display:grid;
-    grid-template-columns: 1fr;
-    max-height: 70vh;
-    overflow-y: hidden;
-    text-overflow: ellipsis;
-    
+    grid-gap: 1em;
 }
 
 .post-text-area{
-    margin: 1rem 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-      
+    margin: 0 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
 }
-.post-image{
+.post-text-area span{
+    padding: .5em;
+}
+.post-image-container{
     max-height: 30vh;
     overflow: hidden;
 }
 .post img{
+    display: inline-block;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -224,10 +207,9 @@ body{
 .post-icons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 1em;
+    margin: 0 1em 1em 1em;
     font-size: 1.2em;
     grid-gap: .5em;
-    max-width:100%;
 }
 .post-icons span{
     margin: 0 0 .5em .5em;
@@ -263,7 +245,15 @@ body{
 .footer-contacts{
     width:100%;
 }
-
+.align-left{
+    text-align: left;
+}
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
 @media(min-width:768px){
     .post-area{
         grid-template-columns: 1fr 1fr;
@@ -282,44 +272,36 @@ body{
 }
 
 @media(min-width:1200px){
-    .inline-force{
-        display: inline-block;
-        margin-left:5.3rem;
-        width: 75%;
-        max-width:80%;
-    }
-    .menu-btn{
+    .smallscreens-btn{
         display:none;
     }
     .header-icons{
-        grid-template-columns: repeat(6, 1fr);
-        width:100%;
-        justify-self: stretch;
+        grid-template-columns: repeat(7, 1fr);
     }
     .header-nav-btns{
         display: inline-block;
     }
     .complete-logo{
-        /* height: 2em; */
         display: inline-block;
+        text-align: center;
         width:  10em;
         margin: .2em;
     }
-    .big-sign-in-btn{
-        background-color: black;
-    }
+   
     .devs-list{
         margin-left: 0;
     }
     .post-area{
         grid-template-columns: repeat(3, 1fr);
+        font-size: 1.4em;
     }
     .footer{
+        margin-left: 18em;
         grid-template-columns: repeat(3, 1fr);
     }
     .footer-icons{
         grid-template-columns: repeat(4, 1fr);
-        margin: 2em;
+        margin: 2em 2em 2em 2em;
     }
     .footer-icons a{
         font-size: 3em;
@@ -337,7 +319,7 @@ body{
     .filter-panel{
         position:fixed;
         width: 16rem;
-        top: 11.6em;
+        top: 12em;
         overflow-y:scroll;
     }
     .footer-contact-parent{
@@ -346,13 +328,11 @@ body{
     .post-area{
         margin-left: 18rem;
     }
-    .post-main{
-        max-height: 50vh;
-    }
     .post-sorting-selection{
         font-size:1.2em;
     }
-    
-
+    .fixed-left-panel{
+        display: block;
+    }
 }
 

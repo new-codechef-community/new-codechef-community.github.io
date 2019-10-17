@@ -12,19 +12,19 @@
         <script src="https://kit.fontawesome.com/bf16eed826.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header"> 
-            <div class="complete-logo"><img src="./img/complete-logo.svg"></div>
-            <div class="inline-force">
+        <header class="header">  
+            <div>
                 <ul class="header-icons">
-                    <li class="menu-btn align-left"><a href="#"><img class="header-vector-img" src="./img/png/mobilebars.png" alt="custom options"></a></li>
-                    <li class="menu-btn align-center"><img class="header-vector-img top-logo" src="./img/Logo.svg" alt="logo"></li>
-                    <li class="menu-btn align-right"><a href="#"><img class="header-vector-img" src="./img/login.svg" alt="sign in"></a></li>
+                    <li class="smallscreens-btn align-left"><a href="#"><img class="header-vector-img" src="./img/png/mobilebars.png" alt="custom options"></a></li>
+                    <li class="smallscreens-btn align-center"><img class="header-vector-img top-logo" src="./img/Logo.svg" alt="logo"></li>
+                    <li class="smallscreens-btn align-right"><a href="#"><img class="header-vector-img" src="./img/login.svg" alt="sign in"></a></li>
                     <li class="header-nav-btns"><a class="button-style " href="#" alt="Home">Home</a></li>
                     <li class="header-nav-btns"><a class="button-style" href="#" alt="Practice">Practice</a></li>
                     <li class="header-nav-btns"><a class="button-style" href="#" alt="Challenges">Challenges</a></li>
                     <li class="header-nav-btns"><a class="button-style" href="#" alt="Companies">Companies</a></li>
                     <li class="header-nav-btns"><a class="button-style" href="#" alt="about">About us</a></li>
-                    <li class="header-nav-btns big-sign-in-btn align-right"><a href="#"><img class="header-vector-img" src="./img/login.svg" alt="sign in"></a></li>
+                    <li class="complete-logo"><img src="./img/complete-logo.svg" alt="logo"></li>
+                    <li class="header-nav-btns align-right"><a href="#"><img class="header-vector-img" src="./img/login.svg" alt="sign in"></a></li>
                 </ul>
             </div>
 
@@ -38,6 +38,8 @@
         </header>
 
         <main>
+            <!-- Below fixed left panel stays behind filter options in fullscreen -->
+            <div class="fixed-left-panel"></div>
             <div class="filter-panel">
                 <div class="search-bar"><input class="search-style" type="search" placeholder="Search Topics"></div>
                 <div class="category"><a class="button-style" href="#" alt="Categories">Categories</a></div>
@@ -70,18 +72,18 @@
             </div>
             <section class="post-area">
                 <article class="post">
-                    <div class="post-main">
-                        <div class="post-image"><img src="./img/jpg/ETL.jpg" alt="post image"></div>
-                        <div class="post-text-area">
-                            <span><i class="fas fa-user-circle"></i></span>
-                            <span></span>Surya Singh</span>
-                            <ul>
-                                <li><h2>Points to remember while writing ETL from scratch</h2></li>
-                                <li><p>ETL is a type of data integration process referring to three distinct but interrelated steps (Extract, Transform and Load) and is used to synthesize data from multiple sources many times to build a Data Warehouse, Data Hub, or Data Lake. ETL is a type of data integration process referring to three distinct but interrelated steps (Extract, Transform and Load) and is used to synthesize data from multiple sources many times to build a Data Warehouse, Data Hub, or Data Lake. I believe you must have realized why I wrote python in bold. Everyone in the Tech Industry accepts that Python is the most important language for Data Science at present. Much better for is create Angular wrapper directive (or component) and publish it as npm package so everyone (and you of course:) can easily re-use it in another project.
-                                </p></li>
-                            </ul>
-                        </div>
+                    <div class="post-image-container">
+                        <img src="./img/jpg/ETL.jpg" alt="post image">
                     </div>
+                    
+                    <div class="post-text-area">
+                        <ul>
+                            <li><i class="fas fa-user-circle"></i><span>Surya Singh</span></li>
+                            <li><h2>Points to remember while writing ETL from scratch</h2></li>
+                            <li><p>ETL is a type of data integration process referring to three distinct but interrelated steps (Extract, Transform and Load) and is used to synthesize data from multiple sources many times to build a Data Warehouse, Data Hub, or Data Lake.</p></li>
+                        </ul>
+                    </div>
+                    
                     <div>
                         <ul class="post-icons">
                             <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
@@ -93,17 +95,18 @@
                 </article>
 
                 <article class="post">
-                    <div class="post-main">
-                        <div class="post-image"><img src="./img/jpg/python.jpg" alt="post image"></div>
-                        <div class="post-text-area">
-                            <span><i class="fas fa-user-circle"></i></span>
-                            <span>Kunal Dhawan</span>
-                            <ul>
-                                <li><h2>Data Science and Python</h2></li>
-                                <li><p>When I google "Data Science", 8/10 results are of Data Science Courses. When I open these courses, I see some common sentences such as "learn Python for Data Science", "basics of Data Analysis in Python" etc. I believe you must have realized why I wrote python in bold. Everyone in the Tech Industry accepts that Python is the most important language for Data Science at present. When I google "Data Science", 8/10 results are of Data Science Courses. When I open these courses, I see some common sentences such as "learn Python for Data Science", "basics of Data Analysis in Python" etc. I believe you must have realized why I wrote python in bold. Everyone in the Tech Industry accepts that Python is the most important language for Data Science at present.</p></li>
-                            </ul>
-                        </div>
+                    <div class="post-image-container">
+                        <img src="./img/jpg/python.jpg" alt="post image">
                     </div>
+                    
+                    <div class="post-text-area">
+                        <ul>
+                            <li><i class="fas fa-user-circle"></i><span>J R</span></li>
+                            <li><h2>Data Science and Python</h2></li>
+                            <li><p>When I google "Data Science", 8/10 results are of Data Science Courses. When I open these courses, I see some common sentences such as "learn Python for Data Science", "basics of Data Analysis in Python" etc. I believe you must have realized why I wrote python in bold.</p></li>
+                        </ul>
+                    </div>
+                    
                     <div>
                         <ul class="post-icons">
                             <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
@@ -115,17 +118,18 @@
                 </article>
 
                 <article class="post">
-                    <div class="post-main">
-                        <div class="post-image"><img src="./img/jpg/data-analytics.png" alt="post image"></div>
-                        <div class="post-text-area">
-                            <span><i class="fas fa-user-circle"></i></span>
-                            <span>Robyn</span>
-                            <ul>
-                                <li><h2>Big Data Analysis Using PySpark</h2></li>
-                                <li><p>Apache Spark is an open-source distributed general-purpose cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance. Apache Spark is an open-source distributed general-purpose cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance. Apache Spark is an open-source distributed general-purpose cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance. Apache Spark is an open-source distributed general-purpose cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.</p></li>
-                            </ul>
-                        </div>
+                    <div class="post-image-container">
+                        <img src="./img/jpg/data-analytics.png" alt="post image">
                     </div>
+                    
+                    <div class="post-text-area">
+                        <ul>
+                            <li><i class="fas fa-user-circle"></i><span>Robyn</span></li>
+                            <li><h2>Big Data Analysis Using PySpark</h2></li>
+                            <li><p>Apache Spark is an open-source distributed general-purpose cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.</p></li>
+                        </ul>    
+                    </div>
+                    
                     <div>
                         <ul class="post-icons">
                             <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
@@ -137,17 +141,18 @@
                 </article>
 
                 <article class="post">
-                    <div class="post-main">
-                        <div class="post-image"><img src="./img/jpg/packing.jpg" alt="post image"></div>
-                        <div class="post-text-area">
-                            <span><i class="fas fa-user-circle"></i></span>
-                            <span>Hardeep</span>
-                            <ul>
-                                <li><h2>Wrapping CommonJS library in Angular 8</h2></li>
-                                <li><p>Time to time on my daily tasks I have to implement some functionality that was already implemented by someone previously in a neat vanillaJS library, but… no Angular version or even ES6 module of it is available to be able to easily grab it into your Angular 8 application. ime to time on my daily tasks I have to implement some functionality that was already implemented by someone previously in a neat vanillaJS library, but… no Angular version or even ES6 module of it is available to be able to easily grab it into your Angular 8 application. Time to time on my daily tasks I have to implement some functionality that was already implemented by someone previously in a neat vanillaJS library, but… no Angular version or even ES6 module of it is available to be able to easily grab it into your Angular 8 application. ime to time on my daily tasks I have to implement some functionality that was already implemented by someone previously in a neat vanillaJS library, but… no Angular version or even ES6 module of it is available to be able to easily grab it into your Angular 8 application.</p></li>
-                            </ul>
-                        </div>
+                    <div class="post-image-container">
+                        <img src="./img/jpg/packing.jpg" alt="post image">
                     </div>
+
+                    <div class="post-text-area">                           
+                        <ul>
+                            <li><i class="fas fa-user-circle"></i><span>Hardeep</span></li>
+                            <li><h2>Wrapping CommonJS library in Angular 8</h2></li>
+                            <li><p>Time to time on my daily tasks I have to implement some functionality that was already implemented by someone previously in a neat vanillaJS library, but… no Angular version or even ES6 module of it is available to be able to easily grab it into your Angular 8 application.</p></li>
+                        </ul>
+                    </div>
+
                     <div>
                         <ul class="post-icons">
                             <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
@@ -159,17 +164,18 @@
                 </article>
 
                 <article class="post">
-                    <div class="post-main">
-                        <div class="post-image"><img src="./img/jpg/react.png" alt="post image"></div>
-                        <div class="post-text-area">
-                            <span><i class="fas fa-user-circle"></i></span>
-                            <span>John</span>
-                            <ul>
-                                <li><h2>Composition vs Inheritance in React</h2></li>
-                                <li><p>Building components in React is fun but it can be tedious sometimes. Suppose, one component needs a button with blue color and the other needs a button with a black border. Similarly, a third component needs a button with a yellow color and blue border. Now, writing code for a button every time with just different styling is, of course, tedious and a bit frustrating. There should be ways of reusing the code and enhancing the components. Building components in React is fun but it can be tedious sometimes. Suppose, one component needs a button with blue color and the other needs a button with a black border. Similarly, a third component needs a button with a yellow color and blue border. Now, writing code for a button every time with just different styling is, of course, tedious and a bit frustrating. There should be ways of reusing the code and enhancing the components.</p></li>
-                            </ul>
-                        </div>
+                    <div class="post-image-container">
+                        <img src="./img/jpg/react.png" alt="post image">
                     </div>
+                    
+                    <div class="post-text-area">
+                        <ul>
+                            <li><i class="fas fa-user-circle"></i><span>John</span></li>
+                            <li><h2>Composition vs Inheritance in React</h2></li>
+                            <li><p>Building components in React is fun but it can be tedious sometimes. Suppose, one component needs a button with blue color and the other needs a button with a black border. Similarly, a third component needs a button with a yellow color and blue border.</p></li>
+                        </ul>
+                    </div>
+                    
                     <div>
                         <ul class="post-icons">
                             <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
@@ -181,17 +187,18 @@
                 </article>
 
                 <article class="post">
-                    <div class="post-main">
-                        <div class="post-image"><img src="./img/jpg/programming.jpg" alt="post image"></div>
-                        <div class="post-text-area">
-                            <span><i class="fas fa-user-circle"></i></span>
-                            <span>Shazam</span>
-                            <ul>
-                                <li><h2>How to Extract Google Maps Coordinates</h2></li>
-                                <li><p>Have you ever thought you can make money by knowing how many restaurants there are in a square mile? There is no free lunch, however, if you know how to use Google Maps, you can extract and collect restaurant's GPS and store them in your own database. With that information on hand and some math calculations, you are off to creating a big data online service. Have you ever thought you can make money by knowing how many restaurants there are in a square mile? There is no free lunch, however, if you know how to use Google Maps, you can extract and collect restaurant's GPS and store them in your own database. With that information on hand and some math calculations, you are off to creating a big data online service.</p></li>
-                            </ul>
-                        </div>
+                    <div class="post-image-container">
+                        <img src="./img/jpg/programming.jpg" alt="post image">
                     </div>
+
+                    <div class="post-text-area">
+                        <ul>
+                            <li><i class="fas fa-user-circle"></i><span>Shazam</span></li>
+                            <li><h2>How to Extract Google Maps Coordinates</h2></li>
+                            <li><p>Have you ever thought you can make money by knowing how many restaurants there are in a square mile? There is no free lunch, however, if you know how to use Google Maps, you can extract and collect restaurant's GPS and store them in your own database.</p></li>
+                        </ul>
+                    </div>
+                    
                     <div>
                         <ul class="post-icons">
                             <li class="align-center"><i class="fas fa-binoculars"></i><span>50</span></li>
@@ -219,16 +226,16 @@
             <div class="footer-contact-parent">
                 <div class="footer-contacts">
                     <ul>
-                        <li><p><strong></strong>Contact Information</strong></p></li>
-                        <li><p>Mobile: +1 324 234 244</p></li>
-                        <li><p>Office: +1 457 766 244</p></li>
+                        <li><strong>Contact Information</strong></li>
+                        <li>Mobile: +1 324 234 244</li>
+                        <li>Office: +1 457 766 244</li>
                     </ul>
                 </div>
                 <div class="footer-contacts">
                     <ul>
-                        <li><p><strong>Address</strong></p></li>
-                        <li><p>A22, calderstone blvd, Toronto, Canada</p></li>
-                        <li><p>All rights reserved</p></li>
+                        <li><strong>Address</strong></li>
+                        <li>A22, calderstone blvd, Toronto, Canada</li>
+                        <li>All rights reserved</li>
                     </ul> 
                 </div>
             </div>
