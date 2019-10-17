@@ -27,6 +27,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: black;
     padding: 0.5rem 1rem;
+    margin: 0 1.3em;
     
 }
 .header-vector-img{
@@ -276,7 +277,8 @@ body{
         display:none;
     }
     .header-icons{
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: 1fr 4fr repeat(6, 1fr);
+        grid-gap:1em;
     }
     .header-nav-btns{
         display: inline-block;
@@ -287,7 +289,6 @@ body{
         width:  10em;
         margin: .2em;
     }
-   
     .devs-list{
         margin-left: 0;
     }
